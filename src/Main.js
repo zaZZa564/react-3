@@ -2,6 +2,8 @@
 // imports
 import React from 'react';
 import Header from './components/Header';
+import Image from './components/Image';
+import logo from './img/react-logo.png'
 
 // class w methods
 class Main extends React.Component {
@@ -16,6 +18,7 @@ class Main extends React.Component {
           onClick={this.clickLog}
           onMouseEnter={this.overLog}
         ></input>
+        <Image file={logo}/>
       </div>
     );
   }
