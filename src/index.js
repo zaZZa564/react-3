@@ -5,14 +5,21 @@ import ReactDOM from 'react-dom/client';
 // root element
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// component
-function component() {
+// components
+const Header = () => {
   return (
-  <div>
-    <h1>header</h1>
-  </div>
-);
+    <header>header</header>
+  );
+}
+
+const Component = () => {
+  return (
+    <div>
+      <Header />
+      <p>some text</p>
+    </div>
+  );
 }
 
 // render
-root.render(<component/>);
+root.render(<Component />);
