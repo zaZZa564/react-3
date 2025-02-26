@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 class Header extends React.Component {
   render() {
     return(
-      <header>header</header>
+      <header>{this.props.title}</header>
     );
   }
 }
@@ -19,7 +19,10 @@ class Component extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header title='page header 1'/>
+        <Header title='page header 2'/>
+        <Header title='page header 3'/>
+        <h1>h1 text</h1>
         <input placeholder='type here'
           onClick={this.clickLog}
           onMouseEnter={this.overLog}
