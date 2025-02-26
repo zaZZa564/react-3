@@ -1,8 +1,18 @@
+// imports
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+// root element
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const element = <h1>header</h1>
+// component
+function component() {
+  return (
+  <div>
+    <h1>header</h1>
+  </div>
+);
+}
 
-root.render(element);
+// render
+root.render(<component/>);
